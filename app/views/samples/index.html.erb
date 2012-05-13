@@ -1,9 +1,0 @@
-<ol class="hfeed">
-  <% SamplesController::ACTIVITIES.each do |content_type, tags| %>
-    <li>
-      <% @tags = tags %>
-      <% @content_type = content_type.to_s %>
-      <%= render :template => "samples/#{content_type}" %>
-    </li>
-  <% end %>
-</ol>
